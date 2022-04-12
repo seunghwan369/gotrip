@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   list-style: none;
   display: flex;
-} 
+}
 
 .head__icons li {
   padding: 8px 12px;
@@ -49,18 +49,18 @@ a {
   padding-left: 45px;
   border-radius: 48px;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
 }
 
 .searchform input#search::-webkit-input-placeholder {
   color: #93a2ad;
 }
 
-.searchform input#search:-moz-placeholder { 
+.searchform input#search:-moz-placeholder {
   color: #93a2ad;
 }
 
@@ -70,16 +70,26 @@ a {
 
 .searchform input#search:-ms-input-placeholder {
   color: #93a2ad;
- }
+}
 
-.searchform input#search:hover, .searchform input#search:focus, .searchform input#search:active {
+.searchform input#search:hover,
+.searchform input#search:focus,
+.searchform input#search:active {
   outline: none;
   background: #ffffff;
 }
 
 /* 크롬 자동완성 값 삭제 */
-input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .searchform .icon {
   position: absolute;
@@ -95,7 +105,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.navbar ul{
+.navbar ul {
   letter-spacing: 0.8px;
   list-style: none;
   margin: 0;
@@ -126,11 +136,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   white-space: nowrap;
 }
 
-  .navbar__menu li a:hover {
-    background-color: lightgray;
-    color: #000;
-    text-align: center;
-  } 
+.navbar__menu li a:hover {
+  background-color: lightgray;
+  color: #000;
+  text-align: center;
+}
 
 .navbar__menu li ul {
   display: none;
@@ -139,10 +149,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: 0px;
   position: absolute;
   width: 200px;
-  z-index: 200;    
+  z-index: 200;
 }
 
-.navbar__menu li ul a{
+.navbar__menu li ul a {
   display: block;
   height: 30px;
   font-size: 15px;
@@ -150,7 +160,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: 10px;
   padding: 10px;
   text-align: left;
-  }
+}
 
 .navbar__menu li:hover ul {
   display: block;
@@ -163,19 +173,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .overseas__tripp1 h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .overseas__tripp2 h1 {
-    font-size: 20px;
-    color: gray;
-    border-bottom: 3px solid #7c7b7b;
-    padding: 20px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .overseas__tripp3 h1 {
@@ -195,8 +205,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .overseas__tripp1 {
-    height: 350px;
-    margin: auto;
+  height: 350px;
+  margin: auto;
 }
 
 .overseas__tripp2 {
@@ -205,8 +215,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .overseas__tripp3 {
-    height: 350px;
-    margin: auto;
+  height: 350px;
+  margin: auto;
 }
 
 .overseas__tripp4 {
@@ -215,16 +225,15 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .tripp1 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .tripimg1 {
-    width: 370px;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tripimg1 img {
@@ -234,10 +243,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .tripex1 {
-    width: 370px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tripex1 span {
@@ -259,12 +268,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .triploc1 {
-    width: 370px;
-    height: 300px;
-    position: relative;
-    margin-right: 20px;
+  width: 370px;
+  height: 300px;
+  position: relative;
+  margin-right: 20px;
 }
-
 
 .btn1 {
   width: 200px;
@@ -293,16 +301,15 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .tripp2 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .tripimg2 {
-    width: 370px;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
+  width: 370px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tripimg2 img {
@@ -374,7 +381,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   justify-content: space-between;
 }
 
-
 .tripimg3 {
   width: 370px;
   height: 250px;
@@ -383,9 +389,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .tripimg3 img {
-width: 370px;
-height: 250px;
-margin-left: 30px;
+  width: 370px;
+  height: 250px;
+  margin-left: 30px;
 }
 
 .tripex3 {
@@ -396,21 +402,21 @@ margin-left: 30px;
 }
 
 .tripex3 span {
-text-align: center;
-margin-top: 20px;
-list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .tripex3 span h3 {
-color: #1032ad;
-font-weight: bold;
-font-size: 20px;
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .tripex3 span li {
-color: #464545;
-font-size: 15px;
-font-weight: bold;
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .triploc3 {
@@ -420,38 +426,36 @@ font-weight: bold;
   margin-right: 20px;
 }
 
-
 .btn3 {
-width: 200px;
-height: 35px;
-text-align: center;
-position: absolute;
-left: 85px;
-bottom: 5px;
-display: flex;
-justify-content: space-around;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  position: absolute;
+  left: 85px;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .btn3 input {
-width: 90px;
-height: 35px;
-font-size: 13px;
-font-weight: bold;
-background-color: white;
-border: 2px solid #4169e1;
-border-radius: 5px;
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #4169e1;
+  border-radius: 5px;
 }
 
 .btn3 input:hover {
-color: white;
-background-color: #4169e1;
+  color: white;
+  background-color: #4169e1;
 }
 
 .tripp4 {
   display: flex;
   justify-content: space-between;
 }
-
 
 .tripimg4 {
   width: 370px;
@@ -461,83 +465,86 @@ background-color: #4169e1;
 }
 
 .tripimg4 img {
-width: 370px;
-height: 250px;
-margin-left: 30px;
+  width: 370px;
+  height: 250px;
+  margin-left: 30px;
 }
 
 .tripex4 {
-width: 370px;
-height: 200px;
-display: flex;
-justify-content: space-between;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tripex4 span {
-text-align: center;
-margin-top: 20px;
-list-style: none;
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
 }
 
 .tripex4 span h3 {
-color: #1032ad;
-font-weight: bold;
-font-size: 20px;
+  color: #1032ad;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .tripex4 span li {
-color: #464545;
-font-size: 15px;
-font-weight: bold;
+  color: #464545;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .triploc4 {
-width: 370px;
-height: 300px;
-position: relative;
-margin-right: 20px;
+  width: 370px;
+  height: 300px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .btn4 {
-width: 200px;
-height: 35px;
-text-align: center;
-position: absolute;
-left: 85px;
-bottom: 5px;
-display: flex;
-justify-content: space-around;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  position: absolute;
+  left: 85px;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .btn4 input {
-width: 90px;
-height: 35px;
-font-size: 13px;
-font-weight: bold;
-background-color: white;
-border: 2px solid #4169e1;
-border-radius: 5px;
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #4169e1;
+  border-radius: 5px;
 }
 
 .btn4 input:hover {
-color: white;
-background-color: #4169e1;
+  color: white;
+  background-color: #4169e1;
 }
 
 .foot {
-  background-color:#485170;
+  background-color: #485170;
   padding: 10px 20px;
   margin-top: 20px;
 }
 
 .foot span {
-font-size: 12px;
-color: #ddd;
-padding: 0 50px;
+  font-size: 12px;
+  color: #ddd;
+  padding: 0 50px;
 }
 
 @media screen and (max-width: 768px) {
-    .head, .navbar, .content, .foot {
-        flex-direction: column;
-    }
+  .head,
+  .navbar,
+  .content,
+  .foot {
+    flex-direction: column;
+  }
 }

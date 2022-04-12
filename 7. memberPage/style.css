@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   list-style: none;
   display: flex;
-} 
+}
 
 .head__icons li {
   padding: 8px 12px;
@@ -49,18 +49,18 @@ a {
   padding-left: 45px;
   border-radius: 48px;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
 }
 
 .searchform input#search::-webkit-input-placeholder {
   color: #93a2ad;
 }
 
-.searchform input#search:-moz-placeholder { 
+.searchform input#search:-moz-placeholder {
   color: #93a2ad;
 }
 
@@ -70,16 +70,26 @@ a {
 
 .searchform input#search:-ms-input-placeholder {
   color: #93a2ad;
- }
+}
 
-.searchform input#search:hover, .searchform input#search:focus, .searchform input#search:active {
+.searchform input#search:hover,
+.searchform input#search:focus,
+.searchform input#search:active {
   outline: none;
   background: #ffffff;
 }
 
 /* 크롬 자동완성 값 삭제 */
-input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .searchform .icon {
   position: absolute;
@@ -95,7 +105,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.navbar ul{
+.navbar ul {
   letter-spacing: 0.8px;
   list-style: none;
   margin: 0;
@@ -130,7 +140,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: lightgray;
   color: #000;
   text-align: center;
-} 
+}
 
 .navbar__menu li ul {
   display: none;
@@ -140,14 +150,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;
 }
 
-.navbar__menu li ul a{
+.navbar__menu li ul a {
   display: block;
   height: 30px;
   font-size: 16px;
-  font-style: normal; 
+  font-style: normal;
   font-weight: 600;
   font-family: "yg750";
   padding: 15px;
@@ -157,7 +167,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {
@@ -165,7 +175,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding: 50px 12px;
   margin: auto;
 }
-  
+
 .content h1 {
   font-size: 25px;
   color: gray;
@@ -174,7 +184,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: auto;
   margin-bottom: 20px;
 }
-  
+
 .signup {
   position: relative;
   margin: auto;
@@ -191,7 +201,7 @@ table.sign {
 }
 
 table.sign tr {
-  border-bottom: 2px solid lightgray ;
+  border-bottom: 2px solid lightgray;
 }
 
 table.sign tr th {
@@ -224,11 +234,10 @@ table.btn {
   margin-top: 50px;
 }
 
-
 table.btn tr td input {
   font-weight: bold;
-  font-size: 15px;       
-} 
+  font-size: 15px;
+}
 
 input.btn1 {
   background-color: #5e2bb8;
@@ -251,7 +260,7 @@ input.btn2 {
   margin-left: 50px;
   padding: 15px 80px;
 }
-  
+
 input.btn2:hover {
   border: 1px solid #4169e1;
   background: #4169e1;
@@ -260,7 +269,7 @@ input.btn2:hover {
 }
 
 .foot {
-  background-color:#485170;
+  background-color: #485170;
   padding: 10px 20px;
   margin-top: 20px;
 }
@@ -270,9 +279,12 @@ input.btn2:hover {
   color: #ddd;
   padding: 0 50px;
 }
-  
-  @media screen and (max-width: 768px) {
-    .head, .navbar, .content, .foot {
-        flex-direction: column;
-    }
+
+@media screen and (max-width: 768px) {
+  .head,
+  .navbar,
+  .content,
+  .foot {
+    flex-direction: column;
   }
+}

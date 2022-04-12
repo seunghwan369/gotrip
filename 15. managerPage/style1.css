@@ -3,226 +3,229 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    border-bottom: 2px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 2px solid lightgray;
 }
 
 .head__logo a {
-    font-size: 15px;
-    font-weight: bold;
-    color: #000080;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000080;
 }
 
 .head__logo i {
-    color: skyblue;
-    font-size: 30px;
+  color: skyblue;
+  font-size: 30px;
 }
 
 .head__btn {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn1 input {
-    width: 150px;
-    height: 50px;
-    padding: 10px;
-    margin-right: 10px;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    background-color: red;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn1 input:hover {
-    background-color: hotpink;
+  background-color: hotpink;
 }
 
 .btn2 input {
-    width: 150px;
-    height: 50px;
-    padding: 10px;
-    margin-left: 10px;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    background-color: gray;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .btn2 input:hover {
-    background: black;
+  background: black;
 }
 
 .navbar {
-    width: 66%;
-    height: 300px;
-    display: inline-block;
+  width: 66%;
+  height: 300px;
+  display: inline-block;
 }
 
 .managerinfo {
-    display: inline-block;
-    position: absolute;
-    background-color: gray;
-    width: 33.2%;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 15px;
-    text-align: center;
-    color: white;
+  display: inline-block;
+  position: absolute;
+  background-color: gray;
+  width: 33.2%;
+  height: 300px;
+  margin-top: 20px;
+  margin-left: 15px;
+  text-align: center;
+  color: white;
 }
 
 .managerinfo i {
-    font-size: 30px;
-    margin-top: 30px;
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin-bottom: 5px;
+  font-size: 30px;
+  margin-top: 30px;
+  width: 35px;
+  height: 35px;
+  border: 3px solid white;
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
 
 .managerinfo span {
-    margin-bottom: 5px;
-    font-size: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .managerinfo p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .managerinfo input {
-    width: 120px;
-    height: 50px;
-    color: white;
-    background-color:royalblue;
-    border: none;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
+  width: 120px;
+  height: 50px;
+  color: white;
+  background-color: royalblue;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 table {
-    width: 100%;
-    height: 100%;
-    border: 2px solid lightgray;
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
-    border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  border: 2px solid lightgray;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-collapse: collapse;
 }
 
 th {
-    background-color: lightgrey;
-    padding: 20px;
+  background-color: lightgrey;
+  padding: 20px;
 }
 
 td {
-    border-bottom: 1px solid lightgrey;
-    padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
 }
 
 .login {
-    float: right;
+  float: right;
 }
 
 .content {
-    height: 500px;
-    margin-top: 30px;
+  height: 500px;
+  margin-top: 30px;
 }
 
 .content1 {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .con1 {
-    width: 65.6%;
-    height: 200px;
-    border: 3px solid black;
+  width: 65.6%;
+  height: 200px;
+  border: 3px solid black;
 }
 
 .con1 h1 {
-    font-size: 20px;
-    border-bottom: 2px solid gray;
-    padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+  padding: 10px;
 }
 
 .con2 {
-    width: 33.2%;
-    height: 510px;
-    background-color: yellow;
-    margin-left: 10px;
-    text-align: center;
+  width: 33.2%;
+  height: 510px;
+  background-color: yellow;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .con2 input {
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    background-color: #ffff00;
-    border: none;
-    text-align: left;
-    font-size: 20px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  background-color: #ffff00;
+  border: none;
+  text-align: left;
+  font-size: 20px;
 }
 
-.con3{
-    position: absolute;
-    border: 3px solid black;
-    width: 32%;
-    height: 280px;
-    top: 670px;
+.con3 {
+  position: absolute;
+  border: 3px solid black;
+  width: 32%;
+  height: 280px;
+  top: 670px;
 }
 
 .con3 h1 {
-    font-size: 20px;
-    border-bottom: 2px solid gray;
-    padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+  padding: 10px;
 }
 
-.con4{
-    position: absolute;
-    border: 3px solid black;
-    width: 32%;
-    height: 280px;
-    top: 670px;
-    left: 637px;
+.con4 {
+  position: absolute;
+  border: 3px solid black;
+  width: 32%;
+  height: 280px;
+  top: 670px;
+  left: 637px;
 }
 
 .con4 h1 {
-    font-size: 20px;
-    border-bottom: 2px solid gray;
-    padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+  padding: 10px;
 }
 
 .foot {
-  background-color:#485170;
+  background-color: #485170;
   padding: 10px 20px;
   margin-top: 20px;
 }
 
 .foot span {
-font-size: 12px;
-color: #ddd;
-padding: 0 50px;
+  font-size: 12px;
+  color: #ddd;
+  padding: 0 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .head, .navbar, .content, .foot {
+  .head,
+  .navbar,
+  .content,
+  .foot {
     flex-direction: column;
   }
 }

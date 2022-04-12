@@ -18,7 +18,7 @@ a {
   text-decoration: none;
   list-style: none;
   display: flex;
-} 
+}
 
 .head__icons li {
   padding: 8px 12px;
@@ -49,18 +49,18 @@ a {
   padding-left: 45px;
   border-radius: 48px;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
 }
 
 .searchform input#search::-webkit-input-placeholder {
   color: #93a2ad;
 }
 
-.searchform input#search:-moz-placeholder { 
+.searchform input#search:-moz-placeholder {
   color: #93a2ad;
 }
 
@@ -70,16 +70,26 @@ a {
 
 .searchform input#search:-ms-input-placeholder {
   color: #93a2ad;
- }
+}
 
-.searchform input#search:hover, .searchform input#search:focus, .searchform input#search:active {
+.searchform input#search:hover,
+.searchform input#search:focus,
+.searchform input#search:active {
   outline: none;
   background: #ffffff;
 }
 
 /* 크롬 자동완성 값 삭제 */
-input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .searchform .icon {
   position: absolute;
@@ -95,7 +105,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.navbar ul{
+.navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -129,7 +139,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: lightgray;
   color: #111;
   text-align: center;
-} 
+}
 
 .navbar__menu li ul {
   display: none;
@@ -139,34 +149,33 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;   
+  text-align: center;
 }
 
-.navbar__menu li ul a{
+.navbar__menu li ul a {
   display: block;
   height: 30px;
   font-size: 16px;
-  font-style: normal; 
+  font-style: normal;
   font-weight: 600;
   font-family: "yg750";
   padding: 15px;
   text-align: center;
   position: relative;
   z-index: 1;
-  }
+}
 
 .navbar__menu li:hover ul {
   display: block;
 }
-  
-  
+
 .content {
   background-color: #ffffff;
   padding: 50px 12px;
   margin: 40px;
   margin-bottom: 170px;
 }
-  
+
 .content h1 {
   font-size: 30px;
   color: gray;
@@ -175,7 +184,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: auto;
   margin-bottom: 20px;
 }
-  
+
 .signup {
   position: relative;
   margin: auto;
@@ -192,7 +201,7 @@ table.myPage {
 }
 
 table.myPage tr {
-  border-bottom: 2px solid lightgray ;
+  border-bottom: 2px solid lightgray;
 }
 
 table.myPage td {
@@ -215,7 +224,7 @@ table.myPage td {
 }
 
 .foot {
-  background-color:#485170;
+  background-color: #485170;
   padding: 10px 20px;
   margin-top: 20px;
 }
@@ -225,9 +234,12 @@ table.myPage td {
   color: #ddd;
   padding: 0 50px;
 }
-  
+
 @media screen and (max-width: 768px) {
-  .head, .navbar, .content, .foot {
+  .head,
+  .navbar,
+  .content,
+  .foot {
     flex-direction: column;
   }
 }

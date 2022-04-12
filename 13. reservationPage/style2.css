@@ -1,35 +1,35 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    overflow-y: auto;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 20px;
 }
 
 .head__icons {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-} 
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
 
 .head__icons li {
-    padding: 8px 12px;
+  padding: 8px 12px;
 }
 
 .head__icons li a {
-    text-align: center;
-    font-size: 10px;
-    color: #485170;
+  text-align: center;
+  font-size: 10px;
+  color: #485170;
 }
 
 .searchform {
@@ -51,18 +51,18 @@ a {
   padding-left: 45px;
   border-radius: 48px;
 
-  -webkit-transition: background .55s ease;
-  -moz-transition: background .55s ease;
-  -ms-transition: background .55s ease;
-  -o-transition: background .55s ease;
-  transition: background .55s ease;
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
 }
 
 .searchform input#search::-webkit-input-placeholder {
   color: #93a2ad;
 }
 
-.searchform input#search:-moz-placeholder { 
+.searchform input#search:-moz-placeholder {
   color: #93a2ad;
 }
 
@@ -72,16 +72,26 @@ a {
 
 .searchform input#search:-ms-input-placeholder {
   color: #93a2ad;
- }
+}
 
-.searchform input#search:hover, .searchform input#search:focus, .searchform input#search:active {
+.searchform input#search:hover,
+.searchform input#search:focus,
+.searchform input#search:active {
   outline: none;
   background: #ffffff;
 }
 
 /* 크롬 자동완성 값 삭제 */
-input:-webkit-autofill{-webkit-box-shadow: 0 0 0 30px #fff inset; -webkit-text-fill-color: #000;}
-input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{transition:background-color 5000s ease-in-out 0s;}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset;
+  -webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 .searchform .icon {
   position: absolute;
@@ -97,7 +107,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #485170;
 }
 
-.navbar ul{
+.navbar ul {
   letter-spacing: 0.8px;
   list-style: none;
   margin: 0;
@@ -132,7 +142,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   background-color: lightgray;
   color: #000;
   text-align: center;
-} 
+}
 
 .navbar__menu li ul {
   display: none;
@@ -142,14 +152,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   position: absolute;
   width: 480px;
   z-index: 200;
-  text-align: center;    
+  text-align: center;
 }
 
-.navbar__menu li ul a{
+.navbar__menu li ul a {
   display: block;
   height: 30px;
   font-size: 16px;
-  font-style: normal; 
+  font-style: normal;
   font-weight: 600;
   font-family: "yg750";
   padding: 15px;
@@ -159,7 +169,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .navbar__menu li:hover ul {
-    display: block;
+  display: block;
 }
 
 .content {
@@ -182,7 +192,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   display: inline-block;
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
   list-style: none;
   vertical-align: middle;
 }
@@ -243,7 +255,7 @@ ol, ul, li {
   min-height: 54px;
   padding: 15px 20px;
   line-height: 23px;
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
 }
 
 .tbl td {
@@ -256,7 +268,7 @@ ol, ul, li {
   padding: 15px 20px;
   font-weight: 500;
   line-height: 23px;
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
 }
 
 .tag__group .board {
@@ -273,9 +285,9 @@ ol, ul, li {
   right: 13%;
   width: 400px;
   top: 39%;
-  -webkit-transition: bottom .3s ease-out;
-  -moz-transition: bottom .3s ease-out;
-  transition: bottom .3s ease-out;
+  -webkit-transition: bottom 0.3s ease-out;
+  -moz-transition: bottom 0.3s ease-out;
+  transition: bottom 0.3s ease-out;
 }
 
 .pay__area.tit {
@@ -290,7 +302,7 @@ ol, ul, li {
   text-align: left;
 }
 
-.info__area1 .tit { 
+.info__area1 .tit {
   position: relative;
   left: 0;
   text-align: left;
@@ -304,11 +316,11 @@ ol, ul, li {
 }
 
 .pay__area {
-   border-top: 1px solid #ddd;
-   padding: 15px 20px 20px;
-   background: #f7f7f7;
-   border-bottom: 1px solid #ddd;
- }
+  border-top: 1px solid #ddd;
+  padding: 15px 20px 20px;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
 
 .info {
   position: relative;
@@ -353,7 +365,7 @@ ol, ul, li {
   font-size: 14px;
 }
 
-.info__area2 .tit { 
+.info__area2 .tit {
   position: absolute;
   left: 0;
   text-align: left;
@@ -378,14 +390,14 @@ ol, ul, li {
   color: #666;
   text-align: left;
   font-weight: 500;
-} 
+}
 
 .info__area3 li {
   font-size: 13px;
 }
 
 .info__area3 li:before {
-  content: '·';
+  content: "·";
   font-size: 20px;
   vertical-align: top;
   line-height: 20px;
@@ -458,11 +470,10 @@ input.pay__btn2 {
   border-radius: 4px;
 }
 
-  
 .pay__btn:hover {
   border: 1px solid #4169e1;
   background: #4169e1;
-  color:#fff;
+  color: #fff;
   transition: all 0.5s;
 }
 
@@ -470,19 +481,22 @@ input.pay__btn2 {
   position: absolute;
   left: 0;
   width: 100%;
-  background-color:#485170;
+  background-color: #485170;
   padding: 10px 20px;
   margin-top: 60px;
 }
 
 .foot span {
-font-size: 12px;
-color: #ddd;
-padding: 0 50px;
+  font-size: 12px;
+  color: #ddd;
+  padding: 0 50px;
 }
 
 @media screen and (max-width: 768px) {
-    .head, .navbar, .content, .foot {
-        flex-direction: column;
-    }
+  .head,
+  .navbar,
+  .content,
+  .foot {
+    flex-direction: column;
+  }
 }

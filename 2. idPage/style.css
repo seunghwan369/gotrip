@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -30,13 +30,13 @@ body {
 }
 
 .idbox h1 {
-    width: 500px;
-    height: 50px;
-    font-size: 30px;
-    color: #000000;
-    border-bottom: 3px solid #7c7b7b;
-    text-align: center;
-    margin: auto;
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  color: #000000;
+  border-bottom: 3px solid #7c7b7b;
+  text-align: center;
+  margin: auto;
 }
 
 .idbox p {
@@ -59,7 +59,7 @@ body {
   top: 50%;
   border: 2px solid rgb(204, 204, 204);
   z-index: 1;
-} 
+}
 
 .radio__wrap {
   position: absolute;

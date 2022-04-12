@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -31,16 +31,16 @@ body {
 }
 
 .loginbox h1 {
-    width: 500px;
-    height: 50px;
-    font-size: 30px;
-    color: #000000;
-    border-bottom: 3px solid #7c7b7b;
-    text-align: center;
-    margin: auto;
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  color: #000000;
+  border-bottom: 3px solid #7c7b7b;
+  text-align: center;
+  margin: auto;
 }
 
-#loginid{
+#loginid {
   letter-spacing: 1px;
   position: absolute;
   width: 480px;
@@ -83,7 +83,7 @@ body {
 }
 
 ::placeholder {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .chk input#idchk {
@@ -144,9 +144,8 @@ body {
   left: 50%;
   top: 50%;
   display: flex;
-
 }
-.search a{
+.search a {
   text-decoration-line: none;
   color: #7c7b7b;
   font-size: 14px;

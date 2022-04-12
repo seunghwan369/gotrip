@@ -1,135 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>국내여행2</title>
-    <link rel="stylesheet" href="style2.css">
-    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
-    </script>
-</head>
-<body>
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/875a512441.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="head">
-        <div class="head__logo">
-            <a href="../5. mainPage/index.html">
-                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
-        </div>
+      <div class="head__logo">
+        <a href="../5. mainPage/index.html">
+          <img src="../5. mainPage/goTripIcon.png" width="170" height="90"
+        /></a>
+      </div>
 
-        <div class="search__box">
-          <div class="searchform">
-            <span class="icon"><i class="fa fa-search"></i></span>
-            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+      <div class="search__box">
+        <div class="searchform">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input
+            type="search"
+            id="search"
+            autocomplete="off"
+            placeholder="어디로 떠나고 싶으세요?"
+          />
+        </div>
+      </div>
+
+      <ul class="head__icons">
+        <li>
+          <a href="../1. loginPage/index.html"
+            ><i class="fa-solid fa-door-open"><br />LOGIN</i></a
+          >
+        </li>
+        <li>
+          <a href="../6. myPage/index.html"
+            ><i class="fa-solid fa-user"><br />MY PAGE</i></a
+          >
+        </li>
+        <li>
+          <a href="../10. cartPage/index.html"
+            ><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <nav class="navbar">
+      <ul class="navbar__menu">
+        <li>
+          <a href="#">해외여행</a>
+          <ul>
+            <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+            <li><a href="../11. overseasPage/index2.html">미국</a></li>
+            <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+            <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+            <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">국내여행</a>
+          <ul>
+            <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
+            <li><a href="../12. domesticPage/index2.html">제주</a></li>
+            <li><a href="../12. domesticPage/index2.html">부산</a></li>
+          </ul>
+        </li>
+        <li><a href="../16. gallery/index1.html">갤러리</a></li>
+        <li>
+          <a href="#">고객센터</a>
+          <ul>
+            <li><a href="../14. servicePage/index1.html">문의사항</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <div class="domestic__tripp1">
+        <h1>제주</h1>
+        <div class="tripp1">
+          <div class="tripimg1">
+            <img src="./img/jieun-lim-oMsXE4kIKC8-unsplash.jpg" />
+          </div>
+          <div class="tripex1">
+            <span>
+              <h3>JEJU / Korea</h3>
+              <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+              <li>인천 출발시간 08:05</li>
+              <li>제주 도착시간 09:20</li>
+            </span>
+          </div>
+          <div class="triploc1">
+            <iframe
+              width="370"
+              height="250"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2UnJL501B6nuKUhtYjVXQxVy07gwnKKk
+                      &q=제주&region=KR&language=ko"
+            >
+            </iframe>
+            <div class="btn1">
+              <input
+                type="button"
+                value="장바구니"
+                onclick="location.href='../10. cartPage/index.html'"
+              />
+              <input
+                type="button"
+                value="예약하기"
+                onclick="location.href='../13. reservationPage/index1.html'"
+              />
+            </div>
           </div>
         </div>
+      </div>
 
-        <ul class="head__icons">
-            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
-            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
-            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
-        </ul>
-    </header>
- 
-    <nav class="navbar">
-        <ul class="navbar__menu">
-            <li><a href="#">해외여행</a>
-                <ul>
-                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
-                  <li><a href="../11. overseasPage/index2.html">미국</a></li>
-                  <li><a href="../11. overseasPage/index2.html">스위스</a></li>
-                  <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
-                  <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
-                </ul>
-            </li>
-            <li><a href="#">국내여행</a>
-                <ul>
-                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
-                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
-                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
-                  </ul>
-                </li>
-            <li><a href="../16. gallery/index1.html">갤러리</a></li>
-            <li><a href="#">고객센터</a>
-                <ul>
-                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
-                  </ul>
-            </li>
-        </ul>
-    </nav>
-   
-    <main class="content">
-        <div class="domestic__tripp1">
-            <h1>제주</h1>
-            <div class="tripp1">
-                <div class="tripimg1">
-                    <img src="./img/jieun-lim-oMsXE4kIKC8-unsplash.jpg"/>
-                </div>
-                <div class="tripex1">
-                    <span>
-                        <h3>JEJU / Korea</h3>
-                          <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                          <li>인천 출발시간 08:05</li>
-                          <li>제주 도착시간 09:20</li>
-                      </span>
-                </div>
-                <div class="triploc1">
-                    <iframe
-                    width="370"
-                    height="250"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2UnJL501B6nuKUhtYjVXQxVy07gwnKKk
-                      &q=제주&region=KR&language=ko">
-                  </iframe>
-                    <div class="btn1">
-                        <input type="button" value="장바구니" onclick="location.href='../10. cartPage/index.html'">
-                        <input type="button" value="예약하기" onclick="location.href='../13. reservationPage/index1.html'">
-                    </div>
-                </div>
+      <div class="domestic__tripp2">
+        <h1>부산</h1>
+        <div class="tripp2">
+          <div class="tripimg2">
+            <img src="./img/keiteu-ko-O__TF8SIfZM-unsplash.jpg" />
+          </div>
+          <div class="tripex2">
+            <span>
+              <h3>BUSAN / Korea</h3>
+              <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+              <li>인천 출발시간 07:15</li>
+              <li>부산 도착시간 08:00</li>
+            </span>
+          </div>
+          <div class="triploc2">
+            <iframe
+              width="370"
+              height="250"
+              style="border: 0"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2UnJL501B6nuKUhtYjVXQxVy07gwnKKk
+                      &q=부산&region=KR&language=ko"
+            >
+            </iframe>
+            <div class="btn2">
+              <input
+                type="button"
+                value="장바구니"
+                onclick="location.href='../10. cartPage/index.html'"
+              />
+              <input
+                type="button"
+                value="예약하기"
+                onclick="location.href='../13. reservationPage/index1.html'"
+              />
             </div>
+          </div>
         </div>
-
-        <div class="domestic__tripp2">
-            <h1>부산</h1>
-            <div class="tripp2">
-                <div class="tripimg2">
-                    <img src="./img/keiteu-ko-O__TF8SIfZM-unsplash.jpg"/>
-                </div>
-                <div class="tripex2">
-                    <span>
-                        <h3>BUSAN / Korea</h3>
-                        <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
-                        <li>인천 출발시간 07:15</li>
-                        <li>부산 도착시간 08:00</li>
-                      </span>
-                </div>
-                <div class="triploc2">
-                    <iframe
-                    width="370"
-                    height="250"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD2UnJL501B6nuKUhtYjVXQxVy07gwnKKk
-                      &q=부산&region=KR&language=ko">
-                  </iframe>
-                    <div class="btn2">
-                        <input type="button" value="장바구니" onclick="location.href='../10. cartPage/index.html'">
-                        <input type="button" value="예약하기" onclick="location.href='../13. reservationPage/index1.html'">
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
 
     <div class="foot">
       <span>
         <strong>(주)여행가조</strong>
       </span>
-      <br>
+      <br />
       <span>
         <strong>대표전화 : 070-1234-5678</strong>
       </span>
@@ -137,5 +178,5 @@
         <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
       </span>
     </div>
-</body>
+  </body>
 </html>

@@ -1,95 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>여행상품 등록/수정</title>
-    <link rel="stylesheet" href="style2.css">
-    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
-    </script>
-</head>
-<body>
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/875a512441.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="head">
-        <div class="head__logo">
-            <a href="../15. managerPage/index1.html">
-                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
-        </div>
+      <div class="head__logo">
+        <a href="../15. managerPage/index1.html">
+          <img src="../5. mainPage/goTripIcon.png" width="170" height="90"
+        /></a>
+      </div>
 
-        <div class="head__btn">
-            <div class="btn1">
-                <input type="button" value="연장" onclick="alert('연장되었습니다.');">
-            </div>
-            <div class="btn2">
-                <input type="button" value="나가기" onclick="location.href='../5. mainPage/index.html'">
-            </div>
+      <div class="head__btn">
+        <div class="btn1">
+          <input
+            type="button"
+            value="연장"
+            onclick="alert('연장되었습니다.');"
+          />
         </div>
+        <div class="btn2">
+          <input
+            type="button"
+            value="나가기"
+            onclick="location.href='../5. mainPage/index.html'"
+          />
+        </div>
+      </div>
     </header>
 
- 
     <nav class="navbar">
-        <ul class="navbar__menu">
-            <li><a href="../15. managerPage/index2.html">여행상품 등록/수정</a></li>
-            <li><a href="../15. managerPage/index3.html">회원 정보 조회/가입여부</a></li>
-            <li><a href="../15. managerPage/index4.html">회원 예약 조회/결제 여부</a></li>
-        </ul>
+      <ul class="navbar__menu">
+        <li><a href="../15. managerPage/index2.html">여행상품 등록/수정</a></li>
+        <li>
+          <a href="../15. managerPage/index3.html">회원 정보 조회/가입여부</a>
+        </li>
+        <li>
+          <a href="../15. managerPage/index4.html">회원 예약 조회/결제 여부</a>
+        </li>
+      </ul>
     </nav>
 
     <main class="content">
-        <h1>여행상품 등록/수정</h1>
-        <div class="edit">
-            <table class="ed">
-                <tbody>
-                    <tr>
-                        <th scope="row">상품코드</th>
-                        <td><input type="text" placeholder="상품코드를 입력하세요."></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">상품이름</th>
-                        <td><input type="text" placeholder="상품이름을 입력하세요."></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">상품사진</th>
-                        <td style="height: 400px;">
-                            <form method="post" enctype="multipart/form-data">
-                                    <label for="chooseFile">
-                                        👉 CLICK HERE! 👈
-                                    </label>
-                                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-                            </form>
+      <h1>여행상품 등록/수정</h1>
+      <div class="edit">
+        <table class="ed">
+          <tbody>
+            <tr>
+              <th scope="row">상품코드</th>
+              <td>
+                <input type="text" placeholder="상품코드를 입력하세요." />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">상품이름</th>
+              <td>
+                <input type="text" placeholder="상품이름을 입력하세요." />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">상품사진</th>
+              <td style="height: 400px">
+                <form method="post" enctype="multipart/form-data">
+                  <label for="chooseFile"> 👉 CLICK HERE! 👈 </label>
+                  <input
+                    type="file"
+                    id="chooseFile"
+                    name="chooseFile"
+                    accept="image/*"
+                    onchange="loadFile(this)"
+                  />
+                </form>
 
-                            <div class="fileContainer">
-                                <div class="fileInput">
-                                    <p>FILE NAME: </p>
-                                    <p id="fileName"></p>
-                                </div>
-                                <div class="buttonContainer">
-                                    <div class="submitButton" id="submitButton">SUBMIT</div>
-                                </div>
-                            </div>
+                <div class="fileContainer">
+                  <div class="fileInput">
+                    <p>FILE NAME:</p>
+                    <p id="fileName"></p>
+                  </div>
+                  <div class="buttonContainer">
+                    <div class="submitButton" id="submitButton">SUBMIT</div>
+                  </div>
+                </div>
 
-                            <div class="image-show" id="image-show"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">상품 설명</th>
-                        <td><input type="text" placeholder="상품내용을 입력하세요."></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">등록 날짜</th>
-                        <td><input type="text" placeholder="등록날짜를 입력하세요."></td>
-                    </tr>
-                    </tbody>
-            </table>
+                <div class="image-show" id="image-show"></div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">상품 설명</th>
+              <td>
+                <input type="text" placeholder="상품내용을 입력하세요." />
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">등록 날짜</th>
+              <td>
+                <input type="text" placeholder="등록날짜를 입력하세요." />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="button">
+        <div class="bttn1">
+          <input
+            type="button"
+            value="수정"
+            onclick="alert('수정되었습니다.');"
+          />
         </div>
-
-        <div class="button">
-            <div class="bttn1">
-                <input type="button" value="수정" onclick="alert('수정되었습니다.');">
-            </div>
-            <div class="bttn2">
-                <input type="button" value="등록" onclick="alert('등록되었습니다.');">
-            </div>
+        <div class="bttn2">
+          <input
+            type="button"
+            value="등록"
+            onclick="alert('등록되었습니다.');"
+          />
+        </div>
       </div>
     </main>
 
@@ -97,7 +131,7 @@
       <span>
         <strong>(주)여행가조</strong>
       </span>
-      <br>
+      <br />
       <span>
         <strong>대표전화 : 070-1234-5678</strong>
       </span>
@@ -107,37 +141,37 @@
     </div>
 
     <script>
-var submit = document.getElementById('submitButton');
-submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
+      var submit = document.getElementById("submitButton");
+      submit.onclick = showImage; //Submit 버튼 클릭시 이미지 보여주기
 
-function showImage() {
-    var newImage = document.getElementById('image-show').lastElementChild;
-    newImage.style.visibility = "visible";
-    
-    document.getElementById('image-upload').style.visibility = 'hidden';
+      function showImage() {
+        var newImage = document.getElementById("image-show").lastElementChild;
+        newImage.style.visibility = "visible";
 
-    document.getElementById('fileName').textContent = null;     //기존 파일 이름 지우기
-}
+        document.getElementById("image-upload").style.visibility = "hidden";
 
-function loadFile(input) {
-    var file = input.files[0];
+        document.getElementById("fileName").textContent = null; //기존 파일 이름 지우기
+      }
 
-    var name = document.getElementById('fileName');
-    name.textContent = file.name;
+      function loadFile(input) {
+        var file = input.files[0];
 
-    var newImage = document.createElement("img");
-    newImage.setAttribute("class", 'img');
+        var name = document.getElementById("fileName");
+        name.textContent = file.name;
 
-    newImage.src = URL.createObjectURL(file);   
+        var newImage = document.createElement("img");
+        newImage.setAttribute("class", "img");
 
-    newImage.style.width = "50%";
-    newImage.style.height = "50%";
-    newImage.style.visibility = "hidden";   //버튼을 누르기 전까지는 이미지 숨기기
-    newImage.style.objectFit = "contain";
+        newImage.src = URL.createObjectURL(file);
 
-    var container = document.getElementById('image-show');
-    container.appendChild(newImage);
-};
+        newImage.style.width = "50%";
+        newImage.style.height = "50%";
+        newImage.style.visibility = "hidden"; //버튼을 누르기 전까지는 이미지 숨기기
+        newImage.style.objectFit = "contain";
+
+        var container = document.getElementById("image-show");
+        container.appendChild(newImage);
+      }
     </script>
-</body>
+  </body>
 </html>
