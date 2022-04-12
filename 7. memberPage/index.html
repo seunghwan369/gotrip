@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <a href="../5. mainPage/index.html">
+                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        </div>
+
+        <div class="search__box">
+          <div class="searchform">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+          </div>
+        </div>
+
+        <ul class="head__icons">
+            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+        </ul>
+    </header>
+ 
+    <nav class="navbar">
+        <ul class="navbar__menu">
+          <li><a href="../11. overseasPage/index1.html">해외여행</a>
+            <ul>
+              <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+              <li><a href="../11. overseasPage/index2.html">미국</a></li>
+              <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+              <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+              <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">국내여행</a>
+                <ul>
+                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
+                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
+                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
+                  </ul>
+                </li>
+            <li><a href="../16. gallery/index1.html">갤러리</a></li>
+            <li><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="signup">
+            <h1>회원정보</h1>
+            <form action="../5. mainPage/index.html">
+              <table class="sign">
+               <tr>
+                 <th>이름</th>
+                 <td><input type="text" class="form-control" name="name" autocomplete="off" placeholder="한글이름(ex.홍길동)" maxlength="20"></td>        
+             </tr>
+             <tr>
+                 <th>아이디</th>
+                 <td><input type="text" class="form-control" name="id" autocomplete="off" maxlength="20"></td>      
+             </tr>
+             <tr>
+               <th>비밀번호</th>
+               <td><input type="password" class="form-control" name="pass1" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>  
+               <th>비밀번호 확인</th>
+               <td><input type="password" class="form-control" name="pass2" autocomplete="off" placeholder="영문+숫자+특수문자 조합 8~15자리" maxlength="15"></td>       
+           </tr>
+           <tr>
+             <th>생년월일</th>
+             <td><input type="text" class="form-control" name="year" autocomplete="off" placeholder="(ex.1990)" maxlength="4"></td>      
+             <td>
+              <select name="month" class="form-control" style="width: 80px; height: 30px; text-align: center;">
+                 <option value="1월">1월</option>
+                 <option value="2월">2월</option>
+                 <option value="3월">3월</option>
+                 <option value="4월">4월</option>
+                 <option value="5월">5월</option>
+                 <option value="6월">6월</option>
+                 <option value="7월">7월</option>
+                 <option value="8월">8월</option>
+                 <option value="9월">9월</option>
+                 <option value="10월">10월</option>
+                 <option value="11월">11월</option>
+                 <option value="12월">12월</option>
+              </select>
+             </td>
+             <td><input type="text" class="form-control" name="day" autocomplete="off" placeholder="(ex.15)" maxlength="2"></td>
+           </tr>
+           <tr>
+             <th>휴대폰번호</th>
+             <td><input type="text" class="form-control" name="phone" autocomplete="off" placeholder="휴대폰번호(ex.01012345678)" maxlength="11"></td>        
+         </tr>
+         <tr>
+           <th>여권번호</th>
+           <td><input type="text" class="form-control" name="num" autocomplete="off" placeholder="영문+숫자 조합 9자리" maxlength="9"></td> 
+         </tr>
+         <tr>
+           <th>이메일</th>
+           <td><input type="text" class="form-control" name="email1" autocomplete="off" placeholder="(ex.sample007)" maxlength="20"></td> 
+           <td>@</td>
+           <td><input type="text" class="form-control" name="email2" autocomplete="off" placeholder="(ex.gamil.com)" maxlength="20"></td>       
+         </tr>
+         </table>
+ 
+         <table class="btn">
+           <tr>
+             <td>
+             <input type="reset" class="btn1" value="회원 정보 수정">
+             <input type="submit" class="btn2" value="확인">
+             </td>
+         </tr>
+         </table>
+       </form>
+        </div>
+    </main>
+
+    <div class="foot">
+      <span>
+        <strong>(주)여행가조</strong>
+      </span>
+      <br>
+      <span>
+        <strong>대표전화 : 070-1234-5678</strong>
+      </span>
+      <span>
+        <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
+      </span>
+    </div>
+</body>
+</html>

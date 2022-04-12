@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 메인페이지</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <a href="../15. managerPage/index1.html">
+                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        </div>
+
+        <div class="head__btn">
+            <div class="btn1">
+                <input type="button" value="연장" onclick="alert('연장되었습니다.');">
+            </div>
+            <div class="btn2">
+                <input type="button" value="나가기" onclick="location.href='../5. mainPage/index.html'">
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <table>
+            <thead>
+                <tr>
+                <th>관리자 메뉴</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="../15. managerPage/index2.html">
+                        여행상품 등록 / 수정
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="../15. managerPage/index3.html">
+                            회원 정보 조회 / 가입여부
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="../15. managerPage/index4.html">
+                            회원 예약 조회 / 결제 여부
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </nav>
+
+        <aside class="managerinfo">
+            <i class="fa-solid fa-user"></i> <br>
+            <span>관리자 <br> abcd1234@naver.com</span> <br>
+            <p>관리자님 환영합니다.</p>
+            <input type="button" value="업그레이드" onclick="alert('최신버전입니다.');">
+        </aside>
+        
+        <main class="content">
+            <div class="content1">
+                <div class="con1">
+                    <h1>오늘의 할 일</h1>
+                </div>
+                <div class="con2">
+                    <input type="text" placeholder="관리자들과 공유할 메모를 입력하세요." style="font-style: italic;">
+                </div>
+
+                <div class="con3">
+                    <h1>방문자 현황</h1>
+                </div>
+                <div class="con4">
+                    <h1>일자별 요약</h1>
+                </div>
+            </div>
+        </main>
+
+        <div class="foot">
+          <span>
+            <strong>(주)여행가조</strong>
+          </span>
+          <br>
+          <span>
+            <strong>대표전화 : 070-1234-5678</strong>
+          </span>
+          <span>
+            <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
+          </span>
+        </div>
+</body>
+</html>

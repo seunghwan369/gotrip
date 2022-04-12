@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+  }
+  
+  .head__logo a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000080;
+  }
+  
+  .head__logo i {
+    color: skyblue;
+    font-size: 30px;
+  }
+  
+  .head__btn {
+    display: flex;
+    justify-content: space-between;
+}
+  
+ .btn1 {
+    border: 3px solid red;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn2 {
+    border: 3px solid gray;
+    padding: 10px;
+    margin-left: 10px;
+}
+  
+.navbar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #485170;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__menu li {
+  display: inline;
+  color: white;
+}
+
+.navbar__menu a {
+  display: inline-block;
+}
+
+.navbar__menu li a {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar__menu li a:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+} 
+
+.navbar__menu li ul {
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 200px;
+  z-index: 200;    
+}
+
+.navbar__menu li ul a{
+  display: block;
+  height: 30px;
+  font-size: 15px;
+  font-style: normal;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  }
+
+.navbar__menu li:hover ul {
+  display: block;
+}
+
+.content {
+    height: 800px;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    margin: auto;
+}
+
+.content h1 {
+  font-size: 20px;
+  color: gray;
+  border-bottom: 3px solid #7c7b7b;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.table__btn {
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tbtn1 {
+    width: 1000px;
+    border: 2px solid gray;
+}
+
+.tbtn2 {
+    width: 50px;
+    border: 2px solid gray;
+}
+
+.tbtn3 {
+    width: 50px;
+    border: 2px solid gray;
+}
+
+.memberinfo {
+    height: 500px; 
+    margin: auto;
+    border: 3px solid palevioletred;
+}
+
+table.mi {
+    width: 1400px;
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 3;
+    margin: auto;
+}
+
+.mi th {
+    height: 10px;
+    padding: 0px;
+    font-weight: bold;
+    vertical-align: top;
+    border: 2px solid #ccc;
+    background: lightgray;
+}
+
+.mi td {
+    padding: 0px;
+    font-weight: bold;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.pagebtn {
+    width: 200px;
+    border: 3px solid skyblue;
+    text-align: center;
+    position: absolute;
+    top: 910px;
+    left: 630px;
+    padding: 10px;
+}
+
+.foot {
+  background-color:#485170;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.foot span {
+font-size: 12px;
+color: #ddd;
+padding: 0 50px;
+}
+  
+@media screen and (max-width: 768px) {
+  .head, .navbar, .content, .foot {
+    flex-direction: column;
+  }
+}

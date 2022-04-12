@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국내여행1</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/css/select2.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <a href="../5. mainPage/index.html">
+                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        </div>
+
+        <div class="search__box">
+          <div class="searchform">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+          </div>
+        </div>
+
+        <ul class="head__icons">
+            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+        </ul>
+    </header>
+ 
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li><a href="../11. overseasPage/index1.html">해외여행</a>
+                <ul>
+                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+                  <li><a href="../11. overseasPage/index2.html">미국</a></li>
+                  <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+                  <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+                  <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+                </ul>
+            </li>
+            <li><a href="../12. domesticPage/index1.html">국내여행</a>
+                <ul>
+                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
+                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
+                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
+                  </ul>
+                </li>
+            <li><a href="../16. gallery/index1.html">갤러리</a></li>
+            <li><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </nav>
+   
+    <main class="content">
+        <div class="domestic__trip">
+            <h1>국내 여행</h1>
+            <form action="../11. overseasPage/index2.html">
+              <div class="trip">
+                <div class="trip1">
+                  <label for="trip" style="margin-top: 10px;">여행지</label>
+                  <select class="form-control" style="width: 550px;">
+                    <option value="choice">여행지를 선택하세요.</option>
+                    <optgroup label="미국">
+                      <option>하와이</option>
+                    </optgroup>
+
+                    <optgroup label="스위스">
+                      <option>취리히</option>
+                    </optgroup>
+
+                    <optgroup label="아프리카">
+                      <option>케냐</option>
+                    </optgroup>
+
+                    <optgroup label="뉴질랜드">
+                      <option>오클랜드</option>
+                    </optgroup>
+
+                    <optgroup label="국내">
+                      <option>제주</option>
+                      <option>부산</option>
+                    </optgroup>
+
+                </select>
+                </div>
+                <div class="trip2" style="margin-top: 10px; font-weight: bold;">출발 예정일
+                  <input type="datetime-local">
+                </div>
+                <div class="trip3" style="margin-top: 10px; font-weight: bold;">도착 예정일
+                  <input type="datetime-local">
+                </div>
+                <div class="trip4">
+                  <input type="button" value="검색하기" onclick="location.href='index2.html'">
+                </div>
+              </div>
+            </form>
+        </div>
+
+        <div class="re_pro">
+          <h1>추천상품</h1>
+          <div class="product">
+              <div class="pro1">
+                <a href="index2.html"><img src="./img/jieun-lim-oMsXE4kIKC8-unsplash.jpg"/></a>
+                <span>
+                  <h3>JEJU / Korea</h3>
+                    <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+                    <li>인천 출발시간 08:05</li>
+                    <li>제주 도착시간 09:20</li>
+                </span>
+              </div>
+              <div class="pro2">
+                <a href="index2.html"><img src="./img/keiteu-ko-O__TF8SIfZM-unsplash.jpg"/></a>
+                <span>
+                  <h3>BUSAN / Korea</h3>
+                  <li>2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</li>
+                  <li>인천 출발시간 07:15</li>
+                  <li>부산 도착시간 08:00</li>
+                </span>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <div class="foot">
+      <span>
+        <strong>(주)여행가조</strong>
+      </span>
+      <br>
+      <span>
+        <strong>대표전화 : 070-1234-5678</strong>
+      </span>
+      <span>
+        <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
+      </span>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.9/js/select2.min.js"></script>
+    <script>
+      // select2 초기화
+      $('select').select2();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약하기2(결제)</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <a href="../5. mainPage/index.html">
+                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        </div>
+
+        <div class="search__box">
+          <div class="searchform">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+          </div>
+        </div>
+
+        <ul class="head__icons">
+            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+        </ul>
+    </header>
+ 
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li><a href="#">해외여행</a>
+                <ul>
+                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+                  <li><a href="../11. overseasPage/index2.html">유럽 / 아프리카</a></li>
+                  <li><a href="../11. overseasPage/index2.html">미주 / 중남미</a></li>
+                </ul>
+            </li>
+            <li><a href="#">국내여행</a>
+                <ul>
+                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
+                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
+                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
+                  </ul>
+                </li>
+            <li><a href="../16. gallery/index1.html">갤러리</a></li>
+            <li><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </nav>
+   
+    <main class="content">
+        <div class="reservation">
+          <div class="right__cont">
+            <div class="step__wrap">
+              <ol class="step">
+                <li>
+                  <i class="fa-solid fa-file-lines" style="font-size: 25px; font-weight: 800;"></i> 
+                    예약정보입력 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                </li>
+                <li class="on">
+                  <i class="fa-regular fa-file-pen" style="font-size: 25px; font-weight: 800;"></i> 
+                    예약내역 &nbsp;<span style="padding-top: 0;">------- </span>&nbsp;
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check" style="font-size: 25px;"></i> 결제완료
+                </li>
+              </ol>
+            </div>
+          </div>
+          <h1>예약 정보</h1>
+          <div class="ly__wrap">
+            <div class="history">
+              <div class="tbl">
+                <table class="type2">
+                  <colgroup>
+                    <col style="width: 17%";>
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>예약번호</th>
+                      <td>GO123456789 / 왕복</td>
+                    </tr>
+                    <tr>
+                      <th>결제시한</th>
+                      <td>2022.04.04(월)&nbsp;&nbsp;17:00</td>
+                    </tr>
+                    <tr>
+                      <th>구간</th>
+                      <td>
+                        <div class="item__course">
+                          <p>
+                            <span class="air__name">서울(ICN)</span>&nbsp;&nbsp;
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>&nbsp;&nbsp;
+                            <span class="air__name">호놀룰루(HNL)</span>&nbsp;&nbsp;
+                            <img src="../13. reservationPage/korean-air.png" width="15" height="15" style="vertical-align: middle;">대한항공(KE)
+                          </p>
+                          <p>
+                            출국일 : 2022.04.14(목)&nbsp;&nbsp;20:35&nbsp;
+                            <em>좌석확정</em>
+                          </p>
+                          <p>
+                            귀국일 : 2022.04.19(화)&nbsp;&nbsp;18:05&nbsp;
+                            <em>좌석확정</em>
+                          </p>
+                          <p>
+                            탑승인원 : 1명 &nbsp; 좌석등급 : 일반석
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>예약일</th>
+                      <td>2022.04.04(월)&nbsp;&nbsp;17:00</td>
+                    </tr>
+                    <tr>
+                      <th>예약상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">예약확정</span>&nbsp;/&nbsp;<span class="board">좌석확정</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>요금상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">요금확정</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>결제상태</th>
+                      <td>
+                        <div class="tag__group">
+                          <span class="board">미결제</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <form name="frm" method="btn" action="index3.html" onSubmit="return Checkform()">
+                <div class="check__btn">
+                  <label><input type="radio" name="check__btn1" id="confirm" value="1"> 예약내역을 확인하였습니다. (필수)</label>
+        
+
+          <div class="reservation__right">
+            <div class="pay__wrap">
+              <strong class="tit">상품 결제 정보</strong>
+            </div>
+            <div class="total">
+              <div class="pay__area">
+                <div class="info__area1">
+                  <div class="info">
+                    <strong class="tit">결제예정금액</strong>
+                  </div>
+                  <strong class="price">1,381,400<span>원</span></strong>
+                  <div class="tax">
+                    <p>유류할증료 포함</p>
+                  </div>
+                </div>
+                <div class="info__area2">
+                  <div class="info">
+                    <strong class="tit">총 상품금액</strong>
+                    <span>1,381,400원</span>
+                  </div>
+                </div>
+              </div>
+              <div class="inr">
+                <strong>인원 별 운임 정보<i class="fa-solid fa-angle-down" id="toggle" onclick="onpenCloseTog()"></i></strong>
+              </div>
+              <div id="toggle__content">
+                <div class="info__area3">
+                  <strong class="tit type">성인 1명</strong>
+                  <ul class="list__detail">
+                    <li>
+                      <strong class="tit">성인 기본 요금
+                        <em>1</em>
+                      </strong>
+                      <span>1,005,000원</span>
+                    </li>
+                    <li>
+                      <strong class="tit">유류할증료 x
+                        <em>1</em>
+                      </strong>
+                      <span>250,000원</span>
+                    </li>
+                    <li>
+                      <strong class="tit">발권대행 수수료
+                        <em>1</em>
+                      </strong>
+                      <span>10,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+              <input type="submit" class="pay__btn2" value="결제하기">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </main>
+
+    <div class="foot">
+      <span>
+        <strong>(주)여행가조</strong>
+      </span>
+      <br>
+      <span>
+        <strong>대표전화 : 070-1234-5678</strong>
+      </span>
+      <span>
+        <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
+      </span>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../13. reservationPage/reservation.js"></script>
+</html>

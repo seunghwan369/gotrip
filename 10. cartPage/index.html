@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/875a512441.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header class="head">
+        <div class="head__logo">
+            <a href="../5. mainPage/index.html">
+                <img src="../5. mainPage/goTripIcon.png" width="170" height="90"></a>
+        </div>
+
+        <div class="search__box">
+          <div class="searchform">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" autocomplete="off" placeholder="어디로 떠나고 싶으세요?">
+          </div>
+        </div>
+
+        <ul class="head__icons">
+            <li><a href="../1. loginPage/index.html"><i class="fa-solid fa-door-open"><br />LOGIN</i></a></li>
+            <li><a href="../6. myPage/index.html"><i class="fa-solid fa-user"><br />MY PAGE</i></a></li>
+            <li><a href="../10. cartPage/index.html"><i class="fa-solid fa-cart-flatbed-suitcase"><br />CART</i></a></li>
+        </ul>
+    </header>
+ 
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li><a href="#">해외여행</a>
+                <ul>
+                  <li><a href="../11. overseasPage/index1.html">추천상품</a></li>
+                  <li><a href="../11. overseasPage/index2.html">미국</a></li>
+                  <li><a href="../11. overseasPage/index2.html">스위스</a></li>
+                  <li><a href="../11. overseasPage/index2.html">아프리카</a></li>
+                  <li><a href="../11. overseasPage/index2.html">뉴질랜드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">국내여행</a>
+                <ul>
+                    <li><a href="../12. domesticPage/index1.html">추천상품</a></li>
+                    <li><a href="../12. domesticPage/index2.html">제주</a></li>
+                    <li><a href="../12. domesticPage/index2.html">부산</a></li>
+                  </ul>
+                </li>
+            <li><a href="../16. gallery/index1.html">갤러리</a></li>
+            <li><a href="#">고객센터</a>
+                <ul>
+                    <li><a href="../14. servicePage/index1.html">문의사항</a></li>
+                  </ul>
+            </li>
+        </ul>
+    </nav>
+   
+    <main class="content">
+      <div class="content__cart">
+        <h1>장바구니</h1>
+          <table class="cartinfo">
+            <colgroup>
+              <col style="width: 100px;"> 
+              <col style="width: 350px;">
+              <col style="width: 350px;">
+              <col style="width: 200px;">
+              <col style="width: 150px;">
+              <col style="width: 100px;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>
+                  <span class="input_button small">
+                    <input type="checkbox" name="checkBox" value="check__all" class="check__all" checked="checked" onclick="selectAll(this)">
+                    <label for="checAll">&nbsp;</label>
+                  </span>
+                  <input type="hidden" id="hdchk" value="0">
+                </th>
+                <th>상품사진</th>
+                <th>상품정보</th>
+                <th>예약정보</th>
+                <th>상품금액</th>
+                <th>선택</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tbody__row1">
+                <td style="display: none;"> 
+                  <form></form>
+                </td>
+                <td>
+                  <span class="input_button small">
+                    <input type="checkbox" name="checkBox" value="check__1" checked="checked">
+                    <label for="checbox2">&nbsp;</label>
+                  </span>
+                </td>
+                <td class="product">
+                  <a href="" title="">
+                    <div class="cart__img">
+                      <img class="img__slides" src="../10. cartPage/hawaii.jpg" width="350px">
+                      <img class="img__slides" src="../10. cartPage/hawaii2.jpg" width="350px">
+                      <img class="img__slides" src="../10. cartPage/hawaii3.jpg" width="350px" height="233px">
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <div>
+                    <p class="travel__info">Hawaii / USA</p> 
+                    <p class="travel__date">2022/03/31 ~ 2022/04/06 &nbsp;(6박 7일)</p>
+                    <p class="departure__time">인천 출발시간 08:05</p>
+                    <p class="arrial__time">하와이 도착시간 17:20</p>
+                    <p class="departure__time" style="margin-top: 25px;">하와이 출발시간 20:45</p>
+                    <p class="arrial__time">인천 도착시간 05:50</p>
+                  </div>
+                </td>
+                <td class="reservation"><span>예약가능</span></td>
+                <td class="price">
+                  <em>
+                    <span>2,500,000원</span>
+                  </em>
+                </td>
+                <td>
+                  <a href="../9. paymentHistory/index.html"  class="micro__btn" id="btn__now">바로예약</a>
+                  <button type="button" name="button" class="micro__btn" id="btn__delete" onclick="showConfirm()">
+                    삭제 <i class="fa-solid fa-xmark" style="font-size: 14px;"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <tr class="tbody__row2">
+              <td style="display: none;"> 
+                <form></form>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td class="total"><span>총 결제금액</span></td>
+              <td class="price">
+                <em>
+                  <span>2,500,000원</span>
+                </em>
+              </td>
+              <td>
+              </td>
+            </tr>
+
+            </tbody>
+
+          </table>
+
+          <div class="btn">
+              <button type="button" class="btn1" onclick="selectDelete()">선택상품삭제</div>
+              <button type="button" class="btn2">예약하기</div>
+          </div>
+      </div>
+    </main>
+
+    <div class="foot">
+      <span>
+        <strong>(주)여행가조</strong>
+      </span>
+      <br>
+      <span>
+        <strong>대표전화 : 070-1234-5678</strong>
+      </span>
+      <span>
+        <strong>주소 : 서울특별시 강남구 테헤란로14길 6</strong>
+      </span>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../10. cartPage/cart.js"></script>
+</html>

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #485170;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.loginbox {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: -250px;
+  margin-top: -250px;
+  left: 50%;
+  top: 50%;
+}
+
+.loginbox h1 {
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    color: #000000;
+    border-bottom: 3px solid #7c7b7b;
+    text-align: center;
+    margin: auto;
+}
+
+#loginid{
+  letter-spacing: 1px;
+  position: absolute;
+  width: 480px;
+  height: 50px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  margin-top: -100px;
+  padding-left: 15px;
+  left: 50%;
+  top: 50%;
+  color: #646262;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#loginpw {
+  letter-spacing: 1px;
+  position: absolute;
+  width: 480px;
+  height: 50px;
+  border: 2px solid #ccc;
+  margin-left: -200px;
+  margin-top: -40px;
+  padding-left: 15px;
+  left: 50%;
+  top: 50%;
+  color: #646262;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#keyShow {
+  position: absolute;
+  display: none;
+  margin-left: -50px;
+  margin-top: 24px;
+  font-size: 9px;
+  cursor: pointer;
+  color: grey;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.chk input#idchk {
+  position: absolute;
+  margin-left: -180px;
+  margin-top: 30px;
+  left: 50%;
+  top: 50%;
+}
+
+.chk label {
+  position: absolute;
+  margin-top: 30px;
+  left: 10%;
+  top: 49%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c7b7b;
+}
+
+.chk a {
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: 30px;
+  right: -20%;
+  top: 49%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c7b7b;
+}
+
+#loginbtn {
+  position: absolute;
+  width: 500px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: rgb(209, 204, 204);
+  margin-left: -200px;
+  margin-top: 60px;
+  left: 50%;
+  top: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#loginbtn:hover {
+  background: rgb(50, 51, 73);
+  color: white;
+  transition: all 0.5s;
+}
+
+.search {
+  position: absolute;
+  justify-content: space-around;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 150px;
+  left: 50%;
+  top: 50%;
+  display: flex;
+
+}
+.search a{
+  text-decoration-line: none;
+  color: #7c7b7b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sns {
+  position: absolute;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 230px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+.snslog {
+  position: absolute;
+  width: 500px;
+  margin-left: -200px;
+  margin-top: 280px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+}

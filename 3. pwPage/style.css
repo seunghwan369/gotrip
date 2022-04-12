@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #485170;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.pwbox {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: -250px;
+  margin-top: -250px;
+  left: 50%;
+  top: 50%;
+}
+
+.pwbox h1 {
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    color: #000000;
+    border-bottom: 3px solid #7c7b7b;
+    text-align: center;
+    margin: auto;
+}
+
+.pwbox p {
+  line-height: 27px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  font-weight: bold;
+  color: rgb(124, 123, 123);
+}
+
+.find__pw {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin-top: -20px;
+  margin-left: -200px;
+  left: 50%;
+  top: 50%;
+  border: 2px solid rgb(204, 204, 204);
+  z-index: 1;
+} 
+
+.radio__wrap {
+  position: absolute;
+  width: 450px;
+  margin-left: -200px;
+  margin-top: -145px;
+  display: flex;
+  justify-content: space-around;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+.radio input .radio {
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+.radio__wrap label {
+  margin-right: 30px;
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.inp__wrap {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+}
+
+#cust__name {
+  letter-spacing: 1px;
+  position: absolute;
+  width: 410px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #646262;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  margin-left: -160px;
+  margin-top: 50px;
+  padding-left: 15px;
+  left: 50%;
+  top: 50%;
+}
+
+::placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(131, 130, 130);
+  padding-left: 7px;
+}
+
+.cust__phone {
+  width: 500px;
+  margin-left: 8px;
+  margin-top: 100px;
+  left: 50%;
+  top: 50%;
+  padding: 20px 2em 2em;
+  padding-bottom: 0px;
+}
+
+#cust__phone__a {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__phone__b {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__phone__c {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#number {
+  letter-spacing: 1px;
+  position: absolute;
+  width: 410px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #646262;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  margin-left: -160px;
+  margin-top: 152px;
+  padding-left: 15px;
+  left: 50%;
+  top: 50%;
+}
+
+#certification__btn {
+  position: absolute;
+  left: 360px;
+  top: 182px;
+  height: 20px;
+  background-color: white;
+  font-size: 12px;
+  border: 1px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#certification__btn:hover {
+  background: rgb(112, 112, 124);
+  color: white;
+  transition: all 0.5s;
+}
+
+#cust__email {
+  width: 500px;
+  margin-left: 8px;
+  margin-top: -92px;
+  margin-bottom: 0;
+  left: 50%;
+  top: 50%;
+  padding: 20px 2em 2em;
+}
+
+#textEmail {
+  background-color: white;
+  height: 20px;
+  /* margin-left: -5px; */
+}
+
+/* #textEmail__2 {
+  background-color: white;
+  margin-left: 4px;
+  color: white;
+} */
+
+#cust__email__a {
+  position: relative;
+  letter-spacing: 1px;
+  /* width: 130px; */
+  width: 220px;
+  height: 40px;
+  margin-top: 32px;
+  font-size: 14px;
+  color: #646262;
+  text-align: left;
+  padding-left: 15px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+#cust__email__b {
+  letter-spacing: 1px;
+  /* width: 125px; */
+  width: 145px;
+  height: 40px;
+  /* margin-left: -3px; */
+  margin-left: -4px;
+  font-size: 14px;
+  color: #646262;
+  text-align: left;
+  padding-left: 10px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+}
+
+/* #cust__email__c {
+  letter-spacing: 1px;
+  width: 130px;
+  height: 40px;
+  margin-left: -3px;
+  font-size: 14px;
+  color: #646262;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  border: none;
+} */
+
+#loginbtn {
+  position: absolute;
+  width: 430px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  background-color: rgb(209, 204, 204);
+  margin-left: -212px;
+  margin-top: 70px;
+  left: 50%;
+  top: 50%;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#loginbtn:hover {
+  background: rgb(50, 51, 73);
+  color: white;
+  transition: all 0.5s;
+}
+
+/* @media screen and (max-width: 768px) {
+    {
+        flex-direction: column;
+    }
+} */
